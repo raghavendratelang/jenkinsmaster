@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri May 05 07:36:01 UTC 2023
+https\://repo.maven.apache.org/maven2/.lastUpdated=1683272161555
+http\://0.0.0.0/.error=Could not transfer artifact org.jboss.weld\:weld-parent\:pom\:26 from/to maven-default-http-blocker (http\://0.0.0.0/)\: Blocked mirror for repositories\: [vaadin-snapshots (http\://oss.sonatype.org/content/repositories/vaadin-snapshots/, default, snapshots), apache.snapshots (http\://repository.apache.org/snapshots, default, snapshots), jboss-public-repository-group (http\://repository.jboss.org/nexus/content/groups/public, default, releases)]
+@default-maven-default-http-blocker-http\://0.0.0.0/.lastUpdated=1683272161540
