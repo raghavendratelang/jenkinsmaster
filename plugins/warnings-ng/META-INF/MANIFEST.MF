@@ -1,0 +1,31 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 17
+Specification-Title: Warnings Next Generation Plugin
+Specification-Version: 10.1
+Implementation-Title: Warnings Next Generation Plugin
+Implementation-Version: 10.1.0
+Group-Id: io.jenkins.plugins
+Short-Name: warnings-ng
+Long-Name: Warnings Next Generation Plugin
+Url: https://github.com/jenkinsci/warnings-ng-plugin
+Plugin-Version: 10.1.0
+Hudson-Version: 2.387.1
+Jenkins-Version: 2.387.1
+Plugin-Dependencies: analysis-model-api:11.1.0,bootstrap5-api:5.2.2-1,ch
+ ecks-api:2.0.0,commons-lang3-api:3.12.0-36.vd97de6465d5b_,commons-text-
+ api:1.10.0-36.vc008c8fcda_7b_,data-tables-api:1.13.3-2,echarts-api:5.4.
+ 0-2,font-awesome-api:6.3.0-1,forensics-api:2.0.1,jquery3-api:3.6.3-1,pl
+ ugin-util-api:3.1.0,prism-api:1.29.0-4,pull-request-monitoring:1.7.8;re
+ solution:=optional,workflow-api:1208.v0cc7c6e0da_9e,workflow-cps:3641.v
+ f58904a_b_b_5d8,workflow-job:1284.v2fe8ed4573d4,workflow-step-api:639.v
+ 6eca_cd8c04a_a_,antisamy-markup-formatter:159.v25b_c67cd35fb_,apache-ht
+ tpcomponents-client-4-api:4.5.14-150.v7a_b_9d17134a_5,credentials:1224.
+ vc23ca_a_9a_2cb_0,dashboard-view:2.472.v9ff2a_e6a_c529;resolution:=opti
+ onal,jackson2-api:2.14.2-319.v37853346a_229,matrix-project:785.v06b_7f4
+ 7b_c631;resolution:=optional,structs:324.va_f5d6774f3a_d,token-macro:32
+ 1.vd7cc1f2a_52c8;resolution:=optional
+Plugin-Developers: Ullrich Hafner:uhafner:ullrich.hafner@gmail.com
+Plugin-License-Name: MIT license
+Plugin-ScmUrl: https://github.com/jenkinsci/warnings-ng-plugin
+

@@ -1,0 +1,28 @@
+Started by user [8mha:////4HWbE+M7S5d79Ygirfs1ZSX5QtLoyiYQ4k3ZnoYF42uRAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZB/dLi1CL9osT0jNKSVJBRAC5oxQfGAAAA[0mraghutelang
+Running as SYSTEM
+Building remotely on [8mha:////4I6FXqB/7FV9qGP/uzhc5UfIAAnwG6ldNagJeM2KyBwVAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/eKcxLLULABEftkOxQAAAA==[0mslavej (jlabel) in workspace /home/ubuntu/wrkspace/workspace/buildjob
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/raghavendratelang/webhook.git
+ > git init /home/ubuntu/wrkspace/workspace/buildjob # timeout=10
+Fetching upstream changes from https://github.com/raghavendratelang/webhook.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+ > git fetch --tags --force --progress -- https://github.com/raghavendratelang/webhook.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/raghavendratelang/webhook.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 78bb2b8724bcac20f4fb2cad16cc873858f5f9ef (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 78bb2b8724bcac20f4fb2cad16cc873858f5f9ef # timeout=10
+Commit message: "Update test"
+ > git rev-list --no-walk cdc8266af5c1304f958ea0f647265066fdb242ff # timeout=10
+[buildjob] $ /bin/sh -xe /tmp/jenkins4236130858622771042.sh
++ cd /var/lib/jenkins/workspace/buildjob
+/tmp/jenkins4236130858622771042.sh: 2: cd: can't cd to /var/lib/jenkins/workspace/buildjob
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

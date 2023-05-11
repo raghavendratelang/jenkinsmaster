@@ -1,0 +1,70 @@
+Started by GitHub push by raghavendratelang
+Running as SYSTEM
+Building on the built-in node in workspace /var/lib/jenkins/workspace/buildjob
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/raghavendratelang/webhook.git
+ > git init /var/lib/jenkins/workspace/buildjob # timeout=10
+Fetching upstream changes from https://github.com/raghavendratelang/webhook.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.2'
+ > git fetch --tags --force --progress -- https://github.com/raghavendratelang/webhook.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/raghavendratelang/webhook.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 6c630b30a53ec18554777526d8477b4a1097d536 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 6c630b30a53ec18554777526d8477b4a1097d536 # timeout=10
+Commit message: "Update ab"
+ > git rev-list --no-walk 474dc7a04b7b8a870ef29525b454da00e15203f4 # timeout=10
+[buildjob] $ /bin/sh -xe /tmp/jenkins553941873449414096.sh
++ cd /var/lib/jenkins/workspace/buildjob
++ make ABC.exe
+gcc -c main.c
+main.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+    2 | main() {
+      | ^~~~
+main.c: In function ‘main’:
+main.c:3:9: warning: implicit declaration of function ‘big2’ [-Wimplicit-function-declaration]
+    3 |         big2();
+      |         ^~~~
+main.c:4:9: warning: implicit declaration of function ‘fact’ [-Wimplicit-function-declaration]
+    4 |         fact();
+      |         ^~~~
+main.c:5:9: warning: implicit declaration of function ‘reverse’ [-Wimplicit-function-declaration]
+    5 |         reverse();
+      |         ^~~~~~~
+main.c:6:9: warning: implicit declaration of function ‘pallindrome’ [-Wimplicit-function-declaration]
+    6 |         pallindrome();
+      |         ^~~~~~~~~~~
+main.c:7:9: warning: implicit declaration of function ‘big3’ [-Wimplicit-function-declaration]
+    7 |         big3();
+      |         ^~~~
+main.c:8:9: warning: implicit declaration of function ‘sumoftwonumbers’ [-Wimplicit-function-declaration]
+    8 |         sumoftwonumbers();
+      |         ^~~~~~~~~~~~~~~
+main.c:9:9: warning: implicit declaration of function ‘fibanaci’ [-Wimplicit-function-declaration]
+    9 |         fibanaci();
+      |         ^~~~~~~~
+main.c:10:9: warning: implicit declaration of function ‘sortingnumbers’ [-Wimplicit-function-declaration]
+   10 |         sortingnumbers();
+      |         ^~~~~~~~~~~~~~
+main.c:11:9: warning: implicit declaration of function ‘oddeven’ [-Wimplicit-function-declaration]
+   11 |         oddeven();
+      |         ^~~~~~~
+gcc -c big2.c
+gcc -c big3.c
+gcc -c fab.c
+gcc -c pall.c
+gcc -c rev.c
+gcc -c sort.c
+gcc -c sum2.c
+gcc -c fact.c
+gcc -c oddoreven.c
+gcc -o ABC.exe main.o big2.o fact.o big3.o fab.o pall.o rev.o sort.o sum2.o oddoreven.o
+Finished: SUCCESS

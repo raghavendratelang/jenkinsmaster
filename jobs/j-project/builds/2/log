@@ -1,0 +1,40 @@
+Started by user [8mha:////4HWbE+M7S5d79Ygirfs1ZSX5QtLoyiYQ4k3ZnoYF42uRAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZB/dLi1CL9osT0jNKSVJBRAC5oxQfGAAAA[0mraghutelang
+Running as SYSTEM
+Building remotely on [8mha:////4I6FXqB/7FV9qGP/uzhc5UfIAAnwG6ldNagJeM2KyBwVAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/eKcxLLULABEftkOxQAAAA==[0mslavej (jlabel) in workspace /home/ubuntu/wrkspace/workspace/j-project/workspace/j-project
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/raghavendratelang/slavejava.git
+ > git init /home/ubuntu/wrkspace/workspace/j-project/workspace/j-project # timeout=10
+Fetching upstream changes from https://github.com/raghavendratelang/slavejava.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+ > git fetch --tags --force --progress -- https://github.com/raghavendratelang/slavejava.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/raghavendratelang/slavejava.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision e2cc09b8072fe6cc4b0919080b523665e02f8994 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f e2cc09b8072fe6cc4b0919080b523665e02f8994 # timeout=10
+Commit message: "added pom.xml of cal"
+ > git rev-list --no-walk e2cc09b8072fe6cc4b0919080b523665e02f8994 # timeout=10
+[j-project] $ /bin/sh -xe /tmp/jenkins12649678588880417909.sh
++ cd /home/ubuntu/wrkspace/workspace/j-project
++ mvn clean install
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  0.232 s
+[[1;34mINFO[m] Finished at: 2023-05-03T11:34:13Z
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] The goal you specified requires a project to execute but there is no POM in this directory (/home/ubuntu/wrkspace/workspace/j-project). Please verify you invoked Maven from the correct directory. -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

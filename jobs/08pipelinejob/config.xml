@@ -1,0 +1,50 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@1292.v27d8cc3e2602">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@2.2125.vddb_a_44a_d605e"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@2.2125.vddb_a_44a_d605e">
+      <jobProperties/>
+      <triggers/>
+      <parameters/>
+      <options/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+  </actions>
+  <description>this is to run pipelinejob</description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@3659.v582dc37621d8">
+    <script>pipeline{
+    agent {label&apos;slavej&apos;}
+    stages{ 
+        stage(&quot;stage1:checkout&quot;){
+            steps{ 
+                git url : &apos;https://github.com/raghavendratelang/DevOpsClassCodes.git&apos; 
+                    }
+            }
+        stage(&quot;stage2:compile the code&quot;){
+            steps{
+                sh &quot;mvn compile&quot;
+            }
+        }
+        stage(&quot;stage3:unit test&quot;){
+            steps{
+                sh &quot;mvn test&quot;
+            }
+        }
+        stage(&quot;stage4:QA&quot;){
+            steps{
+                sh &quot;mvn pmd:pmd&quot;
+            }
+        }
+        stage(&quot;stage5:package&quot;){
+            steps{
+                sh &quot;mvn package&quot;
+            }
+        }    
+ }
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

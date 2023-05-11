@@ -1,0 +1,9 @@
+Started by user [8mha:////4HWbE+M7S5d79Ygirfs1ZSX5QtLoyiYQ4k3ZnoYF42uRAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZB/dLi1CL9osT0jNKSVJBRAC5oxQfGAAAA[0mraghutelang
+Running as SYSTEM
+Building on the built-in node in workspace /var/lib/jenkins/workspace/adipar
+[adipar] $ /bin/sh -xe /tmp/jenkins16726694736680014656.sh
++ echo 1234
+1234
++ echo raghu
+raghu
+Finished: SUCCESS

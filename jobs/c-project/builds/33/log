@@ -1,0 +1,60 @@
+Started by user [8mha:////4HWbE+M7S5d79Ygirfs1ZSX5QtLoyiYQ4k3ZnoYF42uRAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZB/dLi1CL9osT0jNKSVJBRAC5oxQfGAAAA[0mraghutelang
+Running as SYSTEM
+Building remotely on [8mha:////4PVHRH3xIuUFyDDRbsQTRKRZcODsm1cQDGWBfWKy6HzrAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/eKcxLJUQwA49mDyxQAAAA==[0mslave1 (c-project) in workspace /home/ec2-user/wkspace/workspace/c-project
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /home/ec2-user/wkspace/workspace/c-project/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/raghavendratelang/c-project.git # timeout=10
+Fetching upstream changes from https://github.com/raghavendratelang/c-project.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.2'
+ > git fetch --tags --force --progress -- https://github.com/raghavendratelang/c-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 9816b8ae6e689597fb7370d45d46f71899a075d7 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 9816b8ae6e689597fb7370d45d46f71899a075d7 # timeout=10
+Commit message: "added c files"
+ > git rev-list --no-walk 9816b8ae6e689597fb7370d45d46f71899a075d7 # timeout=10
+[c-project] $ /bin/sh -xe /tmp/jenkins7129672224318331115.sh
++ cd /home/ec2-user/wkspace/workspace/c-project
++ make ABC.exe
+gcc -c main.c
+main.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+    2 | main() {
+      | ^~~~
+main.c: In function ‘main’:
+main.c:3:9: warning: implicit declaration of function ‘big2’ [-Wimplicit-function-declaration]
+    3 |         big2();
+      |         ^~~~
+main.c:4:9: warning: implicit declaration of function ‘fact’ [-Wimplicit-function-declaration]
+    4 |         fact();
+      |         ^~~~
+main.c:5:9: warning: implicit declaration of function ‘reverse’ [-Wimplicit-function-declaration]
+    5 |         reverse();
+      |         ^~~~~~~
+main.c:6:9: warning: implicit declaration of function ‘pallindrome’ [-Wimplicit-function-declaration]
+    6 |         pallindrome();
+      |         ^~~~~~~~~~~
+main.c:7:9: warning: implicit declaration of function ‘big3’ [-Wimplicit-function-declaration]
+    7 |         big3();
+      |         ^~~~
+main.c:8:9: warning: implicit declaration of function ‘sumoftwonumbers’ [-Wimplicit-function-declaration]
+    8 |         sumoftwonumbers();
+      |         ^~~~~~~~~~~~~~~
+main.c:9:9: warning: implicit declaration of function ‘fibanaci’ [-Wimplicit-function-declaration]
+    9 |         fibanaci();
+      |         ^~~~~~~~
+main.c:10:9: warning: implicit declaration of function ‘sortingnumbers’ [-Wimplicit-function-declaration]
+   10 |         sortingnumbers();
+      |         ^~~~~~~~~~~~~~
+gcc -c big2.c
+gcc -c big3.c
+gcc -c fab.c
+gcc -c pall.c
+gcc -c rev.c
+gcc -c sort.c
+gcc -c sum2.c
+gcc -c fact.c
+gcc -o ABC.exe main.o big2.o fact.o big3.o fab.o pall.o rev.o sort.o sum2.o 
+Finished: SUCCESS
